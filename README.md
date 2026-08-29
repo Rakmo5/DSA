@@ -2,13 +2,22 @@
 
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
+<p align="left">
+  <img src="https://img.shields.io/badge/LeetCode-8%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
+  <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
+  <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
+</p>
+
 ---
 
 ## 📊 Progress Dashboard
 
-```text
-Progress: [#___________________] 5.3% (8/150 Solved)
-```
+Here is my interactive progress tracker. It features a custom animated bar that automatically updates whenever a problem is marked as solved!
+
+<p align="left">
+  <img src="./progress.svg" alt="Roadmap Progress" width="400">
+</p>
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
