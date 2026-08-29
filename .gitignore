@@ -1,0 +1,17 @@
+# Compiled Binaries (C++ executable outputs)
+*.exe
+*.out
+*.o
+*.obj
+
+# IDE and Editor configs
+.vscode/
+.idea/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.log
