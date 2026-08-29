@@ -3,7 +3,7 @@
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LeetCode-8%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/LeetCode-9%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
   <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
   <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
@@ -21,11 +21,11 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| **Level 1** | 5 / 50 | 10.0% | 🟢 Active |
+| **Level 1** | 6 / 50 | 12.0% | 🟢 Active |
 | **Level 2** | 3 / 50 | 6.0% | 🟢 Active |
 | **Level 3** | 0 / 30 | 0.0% | ⚪ Not Started |
 | **Interview Mode** | 0 / 20 | 0.0% | ⚪ Not Started |
-| **TOTAL** | **8 / 150** | **5.3%** | **🧠 Grind Mode** |
+| **TOTAL** | **9 / 150** | **6.0%** | **🧠 Grind Mode** |
 
 ---
 
@@ -43,7 +43,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 
 
 <details>
-<summary><b>🔥 Level 1 (5/50 Solved)</b></summary>
+<summary><b>🔥 Level 1 (6/50 Solved)</b></summary>
 <br>
 
 | No. | Problem | Algorithmic Pattern | Difficulty | Local C++ Code | Status |
@@ -51,7 +51,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 | 1 | [Celebrity Problem](https://leetcode.com/problems/celebrity-problem/) | Candidate Elimination | 🟢 Easy | [`23Celibrity.cpp`](./23Celibrity.cpp) | ✅ Solved |
 | 2 | [Majority Element](https://leetcode.com/problems/majority-element/) | Candidate Cancellation | 🟢 Easy | [`24MajorityElement.cpp`](./24MajorityElement.cpp) | ✅ Solved |
 | 3 | [Two Sum](https://leetcode.com/problems/two-sum/) | Hashing | 🟢 Easy | [`7TwoSum.cpp`](./7TwoSum.cpp) | ✅ Solved |
-| 4 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Frequency Counting | 🟢 Easy | [`No_004_ValidAnagram.cpp`](./No_004_ValidAnagram.cpp) | ⏳ Not Started |
+| 4 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Frequency Counting | 🟢 Easy | [`No_004_ValidAnagram.cpp`](./No_004_ValidAnagram.cpp) | ✅ Solved |
 | 5 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Hashing / Canonical Form | 🟡 Medium | [`No_005_GroupAnagrams.cpp`](./No_005_GroupAnagrams.cpp) | ⏳ Not Started |
 | 6 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Two Pointers | 🟢 Easy | [`14palandrom.cpp`](./14palandrom.cpp) | ✅ Solved |
 | 7 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | Two Pointers | 🟡 Medium | [`No_007_TwoSumIiInputArrayIsSorted.cpp`](./No_007_TwoSumIiInputArrayIsSorted.cpp) | ⏳ Not Started |
