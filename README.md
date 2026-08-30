@@ -3,7 +3,7 @@
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LeetCode-11%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/LeetCode-12%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
   <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
   <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
@@ -21,11 +21,11 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| **Level 1** | 8 / 50 | 16.0% | 🟢 Active |
+| **Level 1** | 9 / 50 | 18.0% | 🟢 Active |
 | **Level 2** | 3 / 50 | 6.0% | 🟢 Active |
 | **Level 3** | 0 / 30 | 0.0% | ⚪ Not Started |
 | **Interview Mode** | 0 / 20 | 0.0% | ⚪ Not Started |
-| **TOTAL** | **11 / 150** | **7.3%** | **🧠 Grind Mode** |
+| **TOTAL** | **12 / 150** | **8.0%** | **🧠 Grind Mode** |
 
 ---
 
@@ -43,7 +43,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 
 
 <details>
-<summary><b>🔥 Level 1 (8/50 Solved)</b></summary>
+<summary><b>🔥 Level 1 (9/50 Solved)</b></summary>
 <br>
 
 | No. | Problem | Algorithmic Pattern | Difficulty | Local C++ Code | Status |
@@ -55,7 +55,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 | 5 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Hashing / Canonical Form | 🟡 Medium | [`No_005_GroupAnagrams.cpp`](./No_005_GroupAnagrams.cpp) | ✅ Solved |
 | 6 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Two Pointers | 🟢 Easy | [`14palandrom.cpp`](./14palandrom.cpp) | ✅ Solved |
 | 7 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted/) | Two Pointers | 🟡 Medium | [`No_007_TwoSumIiInputArrayIsSorted.cpp`](./No_007_TwoSumIiInputArrayIsSorted.cpp) | ✅ Solved |
-| 8 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Greedy / Running Minimum | 🟢 Easy | [`No_008_BestTimeToBuyAndSellStock.cpp`](./No_008_BestTimeToBuyAndSellStock.cpp) | ⏳ Not Started |
+| 8 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Greedy / Running Minimum | 🟢 Easy | [`No_008_BestTimeToBuyAndSellStock.cpp`](./No_008_BestTimeToBuyAndSellStock.cpp) | ✅ Solved |
 | 9 | [Running Sum of 1D Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Prefix Sum | 🟢 Easy | [`No_009_RunningSumOf1dArray.cpp`](./No_009_RunningSumOf1dArray.cpp) | ⏳ Not Started |
 | 10 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Prefix Sum + Hashing | 🟡 Medium | [`No_010_SubarraySumEqualsK.cpp`](./No_010_SubarraySumEqualsK.cpp) | ⏳ Not Started |
 | 11 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Sliding Window | 🟡 Medium | [`No_011_MinimumSizeSubarraySum.cpp`](./No_011_MinimumSizeSubarraySum.cpp) | ⏳ Not Started |
