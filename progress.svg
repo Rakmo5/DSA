@@ -17,7 +17,7 @@
       animation: fadeIn 0.5s ease-out 1s forwards;
     }
     @keyframes load {
-      to { width: 24.0px; }
+      to { width: 26.7px; }
     }
     @keyframes fadeIn {
       to { opacity: 1; }
@@ -40,7 +40,7 @@
   </defs>
   
   <text x="0" y="18" class="text" style="animation: fadeIn 0.5s ease-out forwards; opacity: 1;">Roadmap Completion</text>
-  <text x="360" y="18" class="text">6.0%</text>
+  <text x="360" y="18" class="text">6.7%</text>
 
   <rect x="0" y="30" width="400" height="16" rx="8" class="track" />
   <rect x="0" y="30" height="16" rx="8" class="fill" />
