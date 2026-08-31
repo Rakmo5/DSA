@@ -29,6 +29,35 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 ---
 
+## 🎯 Current Target Problem (Solve on the Go)
+
+> **📱 Mobile Friendly Card**: Read the problem, test cases, and constraints right here on your phone while walking or commuting!
+
+### **No. 9: [Running Sum of 1D Array](https://leetcode.com/problems/running-sum-of-1d-array/)**
+* **Level:** `Level 1` | **Difficulty:** 🟢 Easy | **Pattern:** `Prefix Sum`
+* **Local Code:** [`No_009_RunningSumOf1dArray.cpp`](./No_009_RunningSumOf1dArray.cpp)
+
+#### 📝 Problem Statement
+Given an array `nums`. We define a running sum of an array as `runningSum[i] = sum(nums[0]…nums[i])`.
+
+Return the running sum of `nums`.
+
+#### 💡 Examples
+**Input:** `nums = [1, 2, 3, 4]`
+**Output:** `[1, 3, 6, 10]`
+**Explanation:** `[1, 1+2, 1+2+3, 1+2+3+4]` -> `[1, 3, 6, 10]`
+
+**Input:** `nums = [1, 1, 1, 1, 1]`
+**Output:** `[1, 2, 3, 4, 5]`
+
+#### ⚙️ Constraints & Target
+- $1 \le \text{nums.length} \le 1000$
+- $-10^6 \le \text{nums}[i] \le 10^6$
+* **Optimal Complexity Goal:** Time: $O(N)$ | Space: $O(1)$ extra space (modify in-place)
+
+---
+
+
 ## 🛠️ Tech Stack & Structure
 * **Language:** C++ (using modern Standard Template Library - STL)
 * **Compiler:** `g++` (C++17/C++20 standard)

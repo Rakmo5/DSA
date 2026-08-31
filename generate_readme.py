@@ -38,6 +38,64 @@ solved_mapping = {
     92: "8maximumSubarray.cpp"
 }
 
+# Detailed problem descriptions for on-the-go reading (walking the dog)
+problem_details = {
+    9: {
+        "statement": "Given an array `nums`. We define a running sum of an array as `runningSum[i] = sum(nums[0]…nums[i])`.\n\nReturn the running sum of `nums`.",
+        "examples": [
+            "**Input:** `nums = [1, 2, 3, 4]`\n**Output:** `[1, 3, 6, 10]`\n**Explanation:** `[1, 1+2, 1+2+3, 1+2+3+4]` -> `[1, 3, 6, 10]`",
+            "**Input:** `nums = [1, 1, 1, 1, 1]`\n**Output:** `[1, 2, 3, 4, 5]`"
+        ],
+        "constraints": "- $1 \\le \\text{nums.length} \\le 1000$\n- $-10^6 \\le \\text{nums}[i] \\le 10^6$",
+        "target_complexity": "Time: $O(N)$ | Space: $O(1)$ extra space (modify in-place)"
+    },
+    10: {
+        "statement": "Given an array of integers `nums` and an integer `k`, return *the total number of subarrays whose sum equals to `k`*.\n\nA subarray is a contiguous non-empty sequence of elements within an array.",
+        "examples": [
+            "**Input:** `nums = [1, 1, 1], k = 2`\n**Output:** `2` (subarrays `[1,1]` at indices 0-1 and 1-2)",
+            "**Input:** `nums = [1, 2, 3], k = 3`\n**Output:** `2` (subarrays `[1,2]` and `[3]`)"
+        ],
+        "constraints": "- $1 \\le \\text{nums.length} \\le 2 \\times 10^4$\n- $-1000 \\le \\text{nums}[i] \\le 1000$\n- $-10^7 \\le k \\le 10^7$",
+        "target_complexity": "Time: $O(N)$ | Space: $O(N)$ with Prefix Sum + Hash Map"
+    },
+    11: {
+        "statement": "Given an array of positive integers `nums` and a positive integer `target`, return the **minimal length** of a subarray whose sum is greater than or equal to `target`. If there is no such subarray, return `0` instead.",
+        "examples": [
+            "**Input:** `target = 7, nums = [2, 3, 1, 2, 4, 3]`\n**Output:** `2`\n**Explanation:** The subarray `[4, 3]` has the minimal length under the problem constraint.",
+            "**Input:** `target = 4, nums = [1, 4, 4]`\n**Output:** `1`"
+        ],
+        "constraints": "- $1 \\le \\text{target} \\le 10^9$\n- $1 \\le \\text{nums.length} \\le 10^5$\n- $1 \\le \\text{nums}[i] \\le 10^4$",
+        "target_complexity": "Time: $O(N)$ | Space: $O(1)$ with Sliding Window"
+    },
+    12: {
+        "statement": "Given a string `s`, find the length of the **longest substring** without duplicate characters.",
+        "examples": [
+            "**Input:** `s = \"abcabcbb\"`\n**Output:** `3` (The answer is `\"abc\"`, with the length of 3)",
+            "**Input:** `s = \"bbbbb\"`\n**Output:** `1` (The answer is `\"b\"`, with length of 1)"
+        ],
+        "constraints": "- $0 \\le \\text{s.length} \\le 5 \\times 10^4$\n- `s` consists of English letters, digits, symbols and spaces.",
+        "target_complexity": "Time: $O(N)$ | Space: $O(\\min(N, M))$ with Sliding Window + Hash Set"
+    },
+    13: {
+        "statement": "Given two strings `s1` and `s2`, return `true` if `s2` contains a **permutation** of `s1`, or `false` otherwise.\n\nIn other words, return `true` if one of `s1`'s permutations is the substring of `s2`.",
+        "examples": [
+            "**Input:** `s1 = \"ab\", s2 = \"eidbaooo\"`\n**Output:** `true` (s2 contains one permutation of s1: `\"ba\"`)",
+            "**Input:** `s1 = \"ab\", s2 = \"eidboaoo\"`\n**Output:** `false`"
+        ],
+        "constraints": "- $1 \\le \\text{s1.length}, \\text{s2.length} \\le 10^4$\n- `s1` and `s2` consist of lowercase English letters.",
+        "target_complexity": "Time: $O(N)$ | Space: $O(1)$ (array of 26)"
+    },
+    14: {
+        "statement": "Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.\n\nAn input string is valid if:\n1. Open brackets must be closed by the same type of brackets.\n2. Open brackets must be closed in the correct order.\n3. Every close bracket has a corresponding open bracket of the same type.",
+        "examples": [
+            "**Input:** `s = \"()[]{}\"`\n**Output:** `true`",
+            "**Input:** `s = \"(]\"`\n**Output:** `false`"
+        ],
+        "constraints": "- $1 \\le \\text{s.length} \\le 10^4$\n- `s` consists of parentheses only `'()[]{}'`.",
+        "target_complexity": "Time: $O(N)$ | Space: $O(N)$ with Stack"
+    }
+}
+
 problems = []
 solved_count = 0
 
@@ -94,6 +152,13 @@ for p in problems:
     if p['solved']:
         level_stats[lvl]['solved'] += 1
 
+# Find first unsolved problem (Current Target)
+current_target = None
+for p in problems:
+    if not p['solved']:
+        current_target = p
+        break
+
 # Generate progress.svg
 svg_content = f"""<svg width="400" height="60" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
@@ -147,7 +212,48 @@ svg_content = f"""<svg width="400" height="60" viewBox="0 0 400 60" fill="none" 
 with open(svg_path, "w", encoding="utf-8") as f:
     f.write(svg_content)
 
-# Generate README Content with badges and animated SVG
+# Target Problem Card Generator
+target_section = ""
+if current_target:
+    c_no = current_target['no']
+    c_name = current_target['name']
+    c_diff = current_target['difficulty']
+    c_pattern = current_target['pattern']
+    c_file = current_target['file']
+    c_slug = c_name.lower().replace(' ', '-').replace('(', '').replace(')', '').replace("'", "").replace(",", "")
+    c_link = f"https://leetcode.com/problems/{c_slug}/"
+    diff_badge = "🟢 Easy" if c_diff == "Easy" else ("🟡 Medium" if c_diff == "Medium" else "🔴 Hard")
+
+    details = problem_details.get(c_no, {})
+    statement = details.get("statement", f"Solve **{c_name}** on [LeetCode]({c_link}).")
+    examples_md = "\n\n".join(details.get("examples", []))
+    constraints = details.get("constraints", "Standard LeetCode constraints apply.")
+    target_comp = details.get("target_complexity", "Aim for the most optimal Time and Space complexity.")
+
+    target_section = f"""---
+
+## 🎯 Current Target Problem (Solve on the Go)
+
+> **📱 Mobile Friendly Card**: Read the problem, test cases, and constraints right here on your phone while walking or commuting!
+
+### **No. {c_no}: [{c_name}]({c_link})**
+* **Level:** `{current_target['level']}` | **Difficulty:** {diff_badge} | **Pattern:** `{c_pattern}`
+* **Local Code:** [`{c_file}`](./{c_file})
+
+#### 📝 Problem Statement
+{statement}
+
+#### 💡 Examples
+{examples_md if examples_md else "*See LeetCode for examples.*"}
+
+#### ⚙️ Constraints & Target
+{constraints}
+* **Optimal Complexity Goal:** {target_comp}
+
+---
+"""
+
+# Generate README Content with badges, active problem card, and animated SVG
 content = f"""# 🎯 ZTM DSA: 0 to Hero Placement Roadmap
 
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
@@ -182,7 +288,7 @@ for lvl, stats in level_stats.items():
 
 content += f"""| **TOTAL** | **{solved_count} / {total_problems}** | **{pct:.1f}%** | **🧠 Grind Mode** |
 
----
+{target_section}
 
 ## 🛠️ Tech Stack & Structure
 * **Language:** C++ (using modern Standard Template Library - STL)
@@ -247,4 +353,4 @@ g++ -std=c++17 -O3 <Filename>.cpp -o output.exe
 with open(readme_path, "w", encoding="utf-8") as f:
     f.write(content)
 
-print(f"SUCCESS: Re-generated README.md and progress.svg! (Solved: {solved_count}/{total_problems})")
+print(f"SUCCESS: Re-generated README.md with Active Target Card and progress.svg! (Solved: {solved_count}/{total_problems})")
