@@ -22,7 +22,7 @@ git commit -m "Update progress dashboard and C++ code"
 
 echo.
 echo Pushing changes to personal GitHub...
-git push origin master
+git push origin main
 if errorlevel 1 (
     echo.
     echo ❌ ERROR: Failed to push to GitHub! Check your network or credentials.
