@@ -25,12 +25,30 @@ using namespace std;
 
 class Solution {
 public:
-    // TODO: Implement your solution here
+    vector<int> runningSum(vector<int>v){
+        int sum = 0;
+        for (auto it=v.begin();it!=v.end();it++){
+            sum+=*it;
+            *it=sum;
+        }
+        return v;
+    }
+    void printvector(vector<int>v){
+        cout<<endl<<"{";
+        for(auto it=v.begin();it!=v.end();it++){
+            cout<<*it<<",";
+        }
+        cout<<"}"<<endl;
+        return;
+    }
 };
 
 int main() {
     cout << "Running No. 9: Running Sum of 1D Array..." << endl;
     Solution solver;
     // Add test cases here
+    vector<int>v={1,2,3,4};
+    v=solver.runningSum(v);
+    solver.printvector(v);
     return 0;
 }
