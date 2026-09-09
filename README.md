@@ -3,7 +3,7 @@
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LeetCode-14%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/LeetCode-17%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
   <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
   <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
@@ -21,11 +21,11 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| **Level 1** | 11 / 50 | 22.0% | 🟢 Active |
+| **Level 1** | 14 / 50 | 28.0% | 🟢 Active |
 | **Level 2** | 3 / 50 | 6.0% | 🟢 Active |
 | **Level 3** | 0 / 30 | 0.0% | ⚪ Not Started |
 | **Interview Mode** | 0 / 20 | 0.0% | ⚪ Not Started |
-| **TOTAL** | **14 / 150** | **9.3%** | **🧠 Grind Mode** |
+| **TOTAL** | **17 / 150** | **11.3%** | **🧠 Grind Mode** |
 
 ---
 
@@ -33,26 +33,31 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 > **📱 Mobile Friendly Card**: Read the problem, test cases, and constraints right here on your phone while walking or commuting!
 
-### **No. 11: [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)**
-* **Level:** `Level 1` | **Difficulty:** 🟡 Medium | **Pattern:** `Sliding Window`
-* **Local Code:** [`No_011_MinimumSizeSubarraySum.cpp`](./No_011_MinimumSizeSubarraySum.cpp)
+### **No. 14: [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)**
+* **Level:** `Level 1` | **Difficulty:** 🟢 Easy | **Pattern:** `Stack`
+* **Local Code:** [`No_014_ValidParentheses.cpp`](./No_014_ValidParentheses.cpp)
 
 #### 📝 Problem Statement
-Given an array of positive integers `nums` and a positive integer `target`, return the **minimal length** of a subarray whose sum is greater than or equal to `target`. If there is no such subarray, return `0` instead.
+Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
+An input string is valid if:
+1. Open brackets must be closed by the same type of brackets.
+2. Open brackets must be closed in the correct order.
+3. Every close bracket has a corresponding open bracket of the same type.
 
 #### 💡 Examples
-**Input:** `target = 7, nums = [2, 3, 1, 2, 4, 3]`
-**Output:** `2`
-**Explanation:** The subarray `[4, 3]` has the minimal length under the problem constraint.
+**Input:** `s = "()[]{}"`
+**Output:** `true`
 
-**Input:** `target = 4, nums = [1, 4, 4]`
-**Output:** `1`
+**Input:** `s = "(]"`
+**Output:** `false`
+
+**Input:** `s = "([])"`
+**Output:** `true`
 
 #### ⚙️ Constraints & Target
-- $1 \le \text{target} \le 10^9$
-- $1 \le \text{nums.length} \le 10^5$
-- $1 \le \text{nums}[i] \le 10^4$
-* **Optimal Complexity Goal:** Time: $O(N)$ | Space: $O(1)$ with Sliding Window
+- $1 \le \text{s.length} \le 10^4$
+- `s` consists of parentheses only `'()[]{}'`.
+* **Optimal Complexity Goal:** Time: $O(N)$ | Space: $O(N)$ with Stack
 
 ---
 
@@ -71,7 +76,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 
 
 <details>
-<summary><b>🔥 Level 1 (11/50 Solved)</b></summary>
+<summary><b>🔥 Level 1 (14/50 Solved)</b></summary>
 <br>
 
 | No. | Problem | Algorithmic Pattern | Difficulty | Local C++ Code | Status |
@@ -86,9 +91,9 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 | 8 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Greedy / Running Minimum | 🟢 Easy | [`No_008_BestTimeToBuyAndSellStock.cpp`](./No_008_BestTimeToBuyAndSellStock.cpp) | ✅ Solved |
 | 9 | [Running Sum of 1D Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Prefix Sum | 🟢 Easy | [`No_009_RunningSumOf1dArray.cpp`](./No_009_RunningSumOf1dArray.cpp) | ✅ Solved |
 | 10 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Prefix Sum + Hashing | 🟡 Medium | [`No_010_SubarraySumEqualsK.cpp`](./No_010_SubarraySumEqualsK.cpp) | ✅ Solved |
-| 11 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Sliding Window | 🟡 Medium | [`No_011_MinimumSizeSubarraySum.cpp`](./No_011_MinimumSizeSubarraySum.cpp) | ⏳ Not Started |
-| 12 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | 🟡 Medium | [`No_012_LongestSubstringWithoutRepeatingCharacters.cpp`](./No_012_LongestSubstringWithoutRepeatingCharacters.cpp) | ⏳ Not Started |
-| 13 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Sliding Window + Frequency | 🟡 Medium | [`No_013_PermutationInString.cpp`](./No_013_PermutationInString.cpp) | ⏳ Not Started |
+| 11 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Sliding Window | 🟡 Medium | [`No_011_MinimumSizeSubarraySum.cpp`](./No_011_MinimumSizeSubarraySum.cpp) | ✅ Solved |
+| 12 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | 🟡 Medium | [`No_012_LongestSubstringWithoutRepeatingCharacters.cpp`](./No_012_LongestSubstringWithoutRepeatingCharacters.cpp) | ✅ Solved |
+| 13 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Sliding Window + Frequency | 🟡 Medium | [`No_013_PermutationInString.cpp`](./No_013_PermutationInString.cpp) | ✅ Solved |
 | 14 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [`No_014_ValidParentheses.cpp`](./No_014_ValidParentheses.cpp) | ⏳ Not Started |
 | 15 | [Min Stack](https://leetcode.com/problems/min-stack/) | Stack / Design | 🟡 Medium | [`No_015_MinStack.cpp`](./No_015_MinStack.cpp) | ⏳ Not Started |
 | 16 | [Binary Search](https://leetcode.com/problems/binary-search/) | Binary Search | 🟢 Easy | [`No_016_BinarySearch.cpp`](./No_016_BinarySearch.cpp) | ⏳ Not Started |

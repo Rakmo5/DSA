@@ -1,47 +1,16 @@
-<svg width="400" height="60" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .track {
-      fill: #e1e4e8;
-    }
-    .fill {
-      fill: url(#grad);
-      animation: load 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      width: 0px;
-    }
-    .text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      fill: #24292e;
-      opacity: 0;
-      animation: fadeIn 0.5s ease-out 1s forwards;
-    }
-    @keyframes load {
-      to { width: 37.3px; }
-    }
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-    @media (prefers-color-scheme: dark) {
-      .track {
-        fill: #21262d;
-        stroke: #30363d;
-      }
-      .text {
-        fill: #c9d1d9;
-      }
-    }
-  </style>
+<svg width="400" height="40" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4facfe" />
-      <stop offset="100%" stop-color="#00f2fe" />
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#06B6D4" />
     </linearGradient>
   </defs>
-  
-  <text x="0" y="18" class="text" style="animation: fadeIn 0.5s ease-out forwards; opacity: 1;">Roadmap Completion</text>
-  <text x="360" y="18" class="text">9.3%</text>
-
-  <rect x="0" y="30" width="400" height="16" rx="8" class="track" />
-  <rect x="0" y="30" height="16" rx="8" class="fill" />
+  <rect width="400" height="40" rx="8" fill="#1E293B"/>
+  <rect x="10" y="10" width="380" height="20" rx="6" fill="#334155"/>
+  <rect x="10" y="10" width="43" height="20" rx="6" fill="url(#grad)">
+    <animate attributeName="width" from="0" to="43" dur="1s" fill="freeze"/>
+  </rect>
+  <text x="200" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">
+    17 / 150 Solved (11.3%)
+  </text>
 </svg>

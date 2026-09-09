@@ -30,10 +30,10 @@ public:
         int sell =prices.size()-1;
         pair<int,int> p;
         for (int i=0;i<prices.size();i++){
-            cout<<endl<<i<<endl;
-            cout<<"buy"<<prices[buy]<<endl;
-            cout<<"sell"<<prices[sell]<<endl;
-            cout<<"current"<<prices[i]<<endl;
+            // cout<<endl<<i<<endl;
+            // cout<<"buy"<<prices[buy]<<endl;
+            // cout<<"sell"<<prices[sell]<<endl;
+            // cout<<"current"<<prices[i]<<endl;
             if (prices[i]>prices[sell] && i<=buy){
                 cout<<"sell :"<< prices[sell]<<" -> " <<prices[i];
                 sell = i;
