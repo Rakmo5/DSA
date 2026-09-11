@@ -3,7 +3,7 @@
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LeetCode-17%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/LeetCode-18%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
   <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
   <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
@@ -21,11 +21,11 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| **Level 1** | 14 / 50 | 28.0% | 🟢 Active |
+| **Level 1** | 15 / 50 | 30.0% | 🟢 Active |
 | **Level 2** | 3 / 50 | 6.0% | 🟢 Active |
 | **Level 3** | 0 / 30 | 0.0% | ⚪ Not Started |
 | **Interview Mode** | 0 / 20 | 0.0% | ⚪ Not Started |
-| **TOTAL** | **17 / 150** | **11.3%** | **🧠 Grind Mode** |
+| **TOTAL** | **18 / 150** | **12.0%** | **🧠 Grind Mode** |
 
 ---
 
@@ -33,31 +33,35 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 > **📱 Mobile Friendly Card**: Read the problem, test cases, and constraints right here on your phone while walking or commuting!
 
-### **No. 14: [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)**
-* **Level:** `Level 1` | **Difficulty:** 🟢 Easy | **Pattern:** `Stack`
-* **Local Code:** [`No_014_ValidParentheses.cpp`](./No_014_ValidParentheses.cpp)
+### **No. 15: [Min Stack](https://leetcode.com/problems/min-stack/)**
+* **Level:** `Level 1` | **Difficulty:** 🟡 Medium | **Pattern:** `Stack / Design`
+* **Local Code:** [`No_015_MinStack.cpp`](./No_015_MinStack.cpp)
 
 #### 📝 Problem Statement
-Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
-An input string is valid if:
-1. Open brackets must be closed by the same type of brackets.
-2. Open brackets must be closed in the correct order.
-3. Every close bracket has a corresponding open bracket of the same type.
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time $O(1)$.
+
+Implement the `MinStack` class:
+* `MinStack()` initializes the stack object.
+* `void push(int val)` pushes the element `val` onto the stack.
+* `void pop()` removes the element on the top of the stack.
+* `int top()` gets the top element of the stack.
+* `int getMin()` retrieves the minimum element in the stack.
+
+You must implement a solution with $O(1)$ time complexity for each function.
 
 #### 💡 Examples
-**Input:** `s = "()[]{}"`
-**Output:** `true`
+**Input:**
+`["MinStack","push","push","push","getMin","pop","top","getMin"]`
+`[[],[-2],[0],[-3],[],[],[],[]]`
 
-**Input:** `s = "(]"`
-**Output:** `false`
-
-**Input:** `s = "([])"`
-**Output:** `true`
+**Output:**
+`[null,null,null,null,-3,null,0,-2]`
 
 #### ⚙️ Constraints & Target
-- $1 \le \text{s.length} \le 10^4$
-- `s` consists of parentheses only `'()[]{}'`.
-* **Optimal Complexity Goal:** Time: $O(N)$ | Space: $O(N)$ with Stack
+- $-2^{31} \le \text{val} \le 2^{31} - 1$
+- Methods `pop`, `top` and `getMin` operations will always be called on **non-empty** stacks.
+- At most $3 \times 10^4$ calls will be made to `push`, `pop`, `top`, and `getMin`.
+* **Optimal Complexity Goal:** Time: $O(1)$ for all operations | Space: $O(N)$
 
 ---
 
@@ -76,7 +80,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 
 
 <details>
-<summary><b>🔥 Level 1 (14/50 Solved)</b></summary>
+<summary><b>🔥 Level 1 (15/50 Solved)</b></summary>
 <br>
 
 | No. | Problem | Algorithmic Pattern | Difficulty | Local C++ Code | Status |
@@ -94,7 +98,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 | 11 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | Sliding Window | 🟡 Medium | [`No_011_MinimumSizeSubarraySum.cpp`](./No_011_MinimumSizeSubarraySum.cpp) | ✅ Solved |
 | 12 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | 🟡 Medium | [`No_012_LongestSubstringWithoutRepeatingCharacters.cpp`](./No_012_LongestSubstringWithoutRepeatingCharacters.cpp) | ✅ Solved |
 | 13 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Sliding Window + Frequency | 🟡 Medium | [`No_013_PermutationInString.cpp`](./No_013_PermutationInString.cpp) | ✅ Solved |
-| 14 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [`No_014_ValidParentheses.cpp`](./No_014_ValidParentheses.cpp) | ⏳ Not Started |
+| 14 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [`No_014_ValidParentheses.cpp`](./No_014_ValidParentheses.cpp) | ✅ Solved |
 | 15 | [Min Stack](https://leetcode.com/problems/min-stack/) | Stack / Design | 🟡 Medium | [`No_015_MinStack.cpp`](./No_015_MinStack.cpp) | ⏳ Not Started |
 | 16 | [Binary Search](https://leetcode.com/problems/binary-search/) | Binary Search | 🟢 Easy | [`No_016_BinarySearch.cpp`](./No_016_BinarySearch.cpp) | ⏳ Not Started |
 | 17 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search | 🟡 Medium | [`No_017_FindFirstAndLastPositionOfElementInSortedArray.cpp`](./No_017_FindFirstAndLastPositionOfElementInSortedArray.cpp) | ⏳ Not Started |
