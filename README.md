@@ -3,7 +3,7 @@
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LeetCode-19%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/LeetCode-20%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
   <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
   <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
@@ -21,11 +21,11 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| **Level 1** | 16 / 50 | 32.0% | 🟢 Active |
+| **Level 1** | 17 / 50 | 34.0% | 🟢 Active |
 | **Level 2** | 3 / 50 | 6.0% | 🟢 Active |
 | **Level 3** | 0 / 30 | 0.0% | ⚪ Not Started |
 | **Interview Mode** | 0 / 20 | 0.0% | ⚪ Not Started |
-| **TOTAL** | **19 / 150** | **12.7%** | **🧠 Grind Mode** |
+| **TOTAL** | **20 / 150** | **13.3%** | **🧠 Grind Mode** |
 
 ---
 
@@ -33,29 +33,32 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 > **📱 Mobile Friendly Card**: Read the problem, test cases, and constraints right here on your phone while walking or commuting!
 
-### **No. 16: [Binary Search](https://leetcode.com/problems/binary-search/)**
-* **Level:** `Level 1` | **Difficulty:** 🟢 Easy | **Pattern:** `Binary Search`
-* **Local Code:** [`No_016_BinarySearch.cpp`](./No_016_BinarySearch.cpp)
+### **No. 17: [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)**
+* **Level:** `Level 1` | **Difficulty:** 🟡 Medium | **Pattern:** `Binary Search`
+* **Local Code:** [`No_017_FindFirstAndLastPositionOfElementInSortedArray.cpp`](./No_017_FindFirstAndLastPositionOfElementInSortedArray.cpp)
 
 #### 📝 Problem Statement
-Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`.
+Given an array of integers `nums` sorted in non-decreasing order, find the starting and ending position of a given `target` value.
+
+If `target` is not found in the array, return `[-1, -1]`.
 
 You must write an algorithm with $O(\log N)$ runtime complexity.
 
 #### 💡 Examples
-**Input:** `nums = [-1, 0, 3, 5, 9, 12], target = 9`
-**Output:** `4`
-**Explanation:** `9` exists in `nums` and its index is `4`.
+**Input:** `nums = [5, 7, 7, 8, 8, 10], target = 8`
+**Output:** `[3, 4]`
 
-**Input:** `nums = [-1, 0, 3, 5, 9, 12], target = 2`
-**Output:** `-1`
-**Explanation:** `2` does not exist in `nums` so return `-1`.
+**Input:** `nums = [5, 7, 7, 8, 8, 10], target = 6`
+**Output:** `[-1, -1]`
+
+**Input:** `nums = [], target = 0`
+**Output:** `[-1, -1]`
 
 #### ⚙️ Constraints & Target
-- $1 \le \text{nums.length} \le 10^4$
-- $-10^4 < \text{nums}[i], \text{target} < 10^4$
-- All the integers in `nums` are **unique**.
-- `nums` is sorted in ascending order.
+- $0 \le \text{nums.length} \le 10^5$
+- $-10^9 \le \text{nums}[i] \le 10^9$
+- `nums` is a non-decreasing array.
+- $-10^9 \le \text{target} \le 10^9$
 * **Optimal Complexity Goal:** Time: $O(\log N)$ | Space: $O(1)$
 
 ---
@@ -75,7 +78,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 
 
 <details>
-<summary><b>🔥 Level 1 (16/50 Solved)</b></summary>
+<summary><b>🔥 Level 1 (17/50 Solved)</b></summary>
 <br>
 
 | No. | Problem | Algorithmic Pattern | Difficulty | Local C++ Code | Status |
@@ -95,7 +98,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 | 13 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Sliding Window + Frequency | 🟡 Medium | [`No_013_PermutationInString.cpp`](./No_013_PermutationInString.cpp) | ✅ Solved |
 | 14 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [`No_014_ValidParentheses.cpp`](./No_014_ValidParentheses.cpp) | ✅ Solved |
 | 15 | [Min Stack](https://leetcode.com/problems/min-stack/) | Stack / Design | 🟡 Medium | [`No_015_MinStack.cpp`](./No_015_MinStack.cpp) | ✅ Solved |
-| 16 | [Binary Search](https://leetcode.com/problems/binary-search/) | Binary Search | 🟢 Easy | [`No_016_BinarySearch.cpp`](./No_016_BinarySearch.cpp) | ⏳ Not Started |
+| 16 | [Binary Search](https://leetcode.com/problems/binary-search/) | Binary Search | 🟢 Easy | [`No_016_BinarySearch.cpp`](./No_016_BinarySearch.cpp) | ✅ Solved |
 | 17 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search | 🟡 Medium | [`No_017_FindFirstAndLastPositionOfElementInSortedArray.cpp`](./No_017_FindFirstAndLastPositionOfElementInSortedArray.cpp) | ⏳ Not Started |
 | 18 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | 🟡 Medium | [`No_018_SearchInRotatedSortedArray.cpp`](./No_018_SearchInRotatedSortedArray.cpp) | ⏳ Not Started |
 | 19 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search on Answer | 🟡 Medium | [`No_019_KokoEatingBananas.cpp`](./No_019_KokoEatingBananas.cpp) | ⏳ Not Started |
