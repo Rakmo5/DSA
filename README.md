@@ -3,7 +3,7 @@
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LeetCode-21%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/LeetCode-22%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
   <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
   <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
@@ -21,11 +21,11 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| **Level 1** | 18 / 50 | 36.0% | 🟢 Active |
+| **Level 1** | 19 / 50 | 38.0% | 🟢 Active |
 | **Level 2** | 3 / 50 | 6.0% | 🟢 Active |
 | **Level 3** | 0 / 30 | 0.0% | ⚪ Not Started |
 | **Interview Mode** | 0 / 20 | 0.0% | ⚪ Not Started |
-| **TOTAL** | **21 / 150** | **14.0%** | **🧠 Grind Mode** |
+| **TOTAL** | **22 / 150** | **14.7%** | **🧠 Grind Mode** |
 
 ---
 
@@ -33,36 +33,34 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 > **📱 Mobile Friendly Card**: Read the problem, test cases, and constraints right here on your phone while walking or commuting!
 
-### **No. 18: [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)**
-* **Level:** `Level 1` | **Difficulty:** 🟡 Medium | **Pattern:** `Binary Search`
-* **Local Code:** [`No_018_SearchInRotatedSortedArray.cpp`](./No_018_SearchInRotatedSortedArray.cpp)
+### **No. 19: [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/)**
+* **Level:** `Level 1` | **Difficulty:** 🟡 Medium | **Pattern:** `Binary Search on Answer`
+* **Local Code:** [`No_019_KokoEatingBananas.cpp`](./No_019_KokoEatingBananas.cpp)
 
 #### 📝 Problem Statement
-There is an integer array `nums` sorted in ascending order (with **distinct** values).
+Koko loves to eat bananas. There are `n` piles of bananas, the `i`-th pile has `piles[i]` bananas. The guards have gone and will come back in `h` hours.
 
-Prior to being passed to your function, `nums` is **possibly rotated** at an unknown pivot index `k` ($1 \le k < \text{nums.length}$) such that the resulting array is `[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]` (0-indexed).
+Koko can decide her banana-eating speed of `k` bananas per hour. Each hour, she chooses some pile of bananas and eats `k` bananas from that pile. If the pile has less than `k` bananas, she eats all of them instead and will not eat any more bananas during this hour.
 
-Given the array `nums` after the possible rotation and an integer `target`, return the index of `target` if it is in `nums`, or `-1` if it is not in `nums`.
+Koko likes to eat slowly but still wants to finish eating all the bananas before the guards return.
 
-You must write an algorithm with $O(\log N)$ runtime complexity.
+Return the **minimum integer `k`** such that she can eat all the bananas within `h` hours.
 
 #### 💡 Examples
-**Input:** `nums = [4, 5, 6, 7, 0, 1, 2], target = 0`
+**Input:** `piles = [3, 6, 7, 11], h = 8`
 **Output:** `4`
 
-**Input:** `nums = [4, 5, 6, 7, 0, 1, 2], target = 3`
-**Output:** `-1`
+**Input:** `piles = [30, 11, 23, 4, 20], h = 5`
+**Output:** `30`
 
-**Input:** `nums = [1], target = 0`
-**Output:** `-1`
+**Input:** `piles = [30, 11, 23, 4, 20], h = 6`
+**Output:** `23`
 
 #### ⚙️ Constraints & Target
-- $1 \le \text{nums.length} \le 5000$
-- $-10^4 \le \text{nums}[i] \le 10^4$
-- All values of `nums` are **unique**.
-- `nums` is an ascending array that has been rotated.
-- $-10^4 \le \text{target} \le 10^4$
-* **Optimal Complexity Goal:** Time: $O(\log N)$ | Space: $O(1)$
+- $1 \le \text{piles.length} \le 10^4$
+- $\text{piles.length} \le h \le 10^9$
+- $1 \le \text{piles}[i] \le 10^9$
+* **Optimal Complexity Goal:** Time: $O(N \log(\max(\text{piles})))$ | Space: $O(1)$
 
 ---
 
@@ -81,7 +79,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 
 
 <details>
-<summary><b>🔥 Level 1 (18/50 Solved)</b></summary>
+<summary><b>🔥 Level 1 (19/50 Solved)</b></summary>
 <br>
 
 | No. | Problem | Algorithmic Pattern | Difficulty | Local C++ Code | Status |
@@ -103,7 +101,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 | 15 | [Min Stack](https://leetcode.com/problems/min-stack/) | Stack / Design | 🟡 Medium | [`No_015_MinStack.cpp`](./No_015_MinStack.cpp) | ✅ Solved |
 | 16 | [Binary Search](https://leetcode.com/problems/binary-search/) | Binary Search | 🟢 Easy | [`No_016_BinarySearch.cpp`](./No_016_BinarySearch.cpp) | ✅ Solved |
 | 17 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Binary Search | 🟡 Medium | [`No_017_FindFirstAndLastPositionOfElementInSortedArray.cpp`](./No_017_FindFirstAndLastPositionOfElementInSortedArray.cpp) | ✅ Solved |
-| 18 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | 🟡 Medium | [`No_018_SearchInRotatedSortedArray.cpp`](./No_018_SearchInRotatedSortedArray.cpp) | ⏳ Not Started |
+| 18 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | 🟡 Medium | [`No_018_SearchInRotatedSortedArray.cpp`](./No_018_SearchInRotatedSortedArray.cpp) | ✅ Solved |
 | 19 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search on Answer | 🟡 Medium | [`No_019_KokoEatingBananas.cpp`](./No_019_KokoEatingBananas.cpp) | ⏳ Not Started |
 | 20 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Linked List / Pointers | 🟢 Easy | [`17reverselist.cpp`](./17reverselist.cpp) | ✅ Solved |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Linked List / Merge | 🟢 Easy | [`No_021_MergeTwoSortedLists.cpp`](./No_021_MergeTwoSortedLists.cpp) | ⏳ Not Started |

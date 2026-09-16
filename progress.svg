@@ -7,10 +7,10 @@
   </defs>
   <rect width="400" height="40" rx="8" fill="#1E293B"/>
   <rect x="10" y="10" width="380" height="20" rx="6" fill="#334155"/>
-  <rect x="10" y="10" width="53" height="20" rx="6" fill="url(#grad)">
-    <animate attributeName="width" from="0" to="53" dur="1s" fill="freeze"/>
+  <rect x="10" y="10" width="55" height="20" rx="6" fill="url(#grad)">
+    <animate attributeName="width" from="0" to="55" dur="1s" fill="freeze"/>
   </rect>
   <text x="200" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">
-    21 / 150 Solved (14.0%)
+    22 / 150 Solved (14.7%)
   </text>
 </svg>
