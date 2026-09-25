@@ -93,6 +93,16 @@ problem_details = {
         ],
         "constraints": "- $1 \\le \\text{s.length} \\le 10^4$\n- `s` consists of parentheses only `'()[]{}'`.",
         "target_complexity": "Time: $O(N)$ | Space: $O(N)$ with Stack"
+    },
+    22: {
+        "statement": "Given `head`, the head of a linked list, determine if the linked list has a cycle in it.\n\nThere is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. Note that `pos` is not passed as a parameter.\n\nReturn `true` if there is a cycle in the linked list. Otherwise, return `false`.",
+        "examples": [
+            "**Input:** `head = [3, 2, 0, -4], pos = 1`\n**Output:** `true` (tail connects to node index 1)",
+            "**Input:** `head = [1, 2], pos = 0`\n**Output:** `true` (tail connects to node index 0)",
+            "**Input:** `head = [1], pos = -1`\n**Output:** `false` (no cycle)"
+        ],
+        "constraints": "- The number of nodes in the list is in the range $[0, 10^4]$.\n- $-10^5 \\le \\text{Node.val} \\le 10^5$\n- `pos` is `-1` or a valid index in the linked-list.",
+        "target_complexity": "Time: $O(N)$ | Space: $O(1)$ extra space using Fast & Slow Pointers (Floyd's Cycle-Finding Algorithm)"
     }
 }
 

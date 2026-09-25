@@ -3,7 +3,7 @@
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LeetCode-23%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/LeetCode-24%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
   <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
   <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
@@ -21,11 +21,11 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| **Level 1** | 20 / 50 | 40.0% | 🟢 Active |
+| **Level 1** | 21 / 50 | 42.0% | 🟢 Active |
 | **Level 2** | 3 / 50 | 6.0% | 🟢 Active |
 | **Level 3** | 0 / 30 | 0.0% | ⚪ Not Started |
 | **Interview Mode** | 0 / 20 | 0.0% | ⚪ Not Started |
-| **TOTAL** | **23 / 150** | **15.3%** | **🧠 Grind Mode** |
+| **TOTAL** | **24 / 150** | **16.0%** | **🧠 Grind Mode** |
 
 ---
 
@@ -33,32 +33,32 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 > **📱 Mobile Friendly Card**: Read the problem, test cases, and constraints right here on your phone while walking or commuting!
 
-### **No. 21: [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)**
-* **Level:** `Level 1` | **Difficulty:** 🟢 Easy | **Pattern:** `Linked List / Merge`
-* **Local Code:** [`No_021_MergeTwoSortedLists.cpp`](./No_021_MergeTwoSortedLists.cpp)
+### **No. 22: [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)**
+* **Level:** `Level 1` | **Difficulty:** 🟢 Easy | **Pattern:** `Fast & Slow Pointers`
+* **Local Code:** [`No_022_LinkedListCycle.cpp`](./No_022_LinkedListCycle.cpp)
 
 #### 📝 Problem Statement
-You are given the heads of two sorted linked lists `list1` and `list2`.
+Given `head`, the head of a linked list, determine if the linked list has a cycle in it.
 
-Merge the two lists into one **sorted** list. The list should be made by splicing together the nodes of the first two lists.
+There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. Note that `pos` is not passed as a parameter.
 
-Return the head of the merged linked list.
+Return `true` if there is a cycle in the linked list. Otherwise, return `false`.
 
 #### 💡 Examples
-**Input:** `list1 = [1, 2, 4], list2 = [1, 3, 4]`
-**Output:** `[1, 1, 2, 3, 4, 4]`
+**Input:** `head = [3, 2, 0, -4], pos = 1`
+**Output:** `true` (tail connects to node index 1)
 
-**Input:** `list1 = [], list2 = []`
-**Output:** `[]`
+**Input:** `head = [1, 2], pos = 0`
+**Output:** `true` (tail connects to node index 0)
 
-**Input:** `list1 = [], list2 = [0]`
-**Output:** `[0]`
+**Input:** `head = [1], pos = -1`
+**Output:** `false` (no cycle)
 
 #### ⚙️ Constraints & Target
-- The number of nodes in both lists is in the range $[0, 50]$.
-- $-100 \le \text{Node.val} \le 100$
-- Both `list1` and `list2` are sorted in **non-decreasing** order.
-* **Optimal Complexity Goal:** Time: $O(N + M)$ | Space: $O(1)$ iterative
+- The number of nodes in the list is in the range $[0, 10^4]$.
+- $-10^5 \le \text{Node.val} \le 10^5$
+- `pos` is `-1` or a valid index in the linked-list.
+* **Optimal Complexity Goal:** Time: $O(N)$ | Space: $O(1)$ extra space using Fast & Slow Pointers (Floyd's Cycle-Finding Algorithm)
 
 ---
 
@@ -77,7 +77,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 
 
 <details>
-<summary><b>🔥 Level 1 (20/50 Solved)</b></summary>
+<summary><b>🔥 Level 1 (21/50 Solved)</b></summary>
 <br>
 
 | No. | Problem | Algorithmic Pattern | Difficulty | Local C++ Code | Status |
@@ -102,7 +102,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 | 18 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Binary Search | 🟡 Medium | [`No_018_SearchInRotatedSortedArray.cpp`](./No_018_SearchInRotatedSortedArray.cpp) | ✅ Solved |
 | 19 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search on Answer | 🟡 Medium | [`No_019_KokoEatingBananas.cpp`](./No_019_KokoEatingBananas.cpp) | ✅ Solved |
 | 20 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Linked List / Pointers | 🟢 Easy | [`17reverselist.cpp`](./17reverselist.cpp) | ✅ Solved |
-| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Linked List / Merge | 🟢 Easy | [`No_021_MergeTwoSortedLists.cpp`](./No_021_MergeTwoSortedLists.cpp) | ⏳ Not Started |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Linked List / Merge | 🟢 Easy | [`No_021_MergeTwoSortedLists.cpp`](./No_021_MergeTwoSortedLists.cpp) | ✅ Solved |
 | 22 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Fast & Slow Pointers | 🟢 Easy | [`No_022_LinkedListCycle.cpp`](./No_022_LinkedListCycle.cpp) | ⏳ Not Started |
 | 23 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Tree DFS / Recursion | 🟢 Easy | [`No_023_MaximumDepthOfBinaryTree.cpp`](./No_023_MaximumDepthOfBinaryTree.cpp) | ⏳ Not Started |
 | 24 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | BST / Tree DFS | 🟡 Medium | [`No_024_ValidateBinarySearchTree.cpp`](./No_024_ValidateBinarySearchTree.cpp) | ⏳ Not Started |
