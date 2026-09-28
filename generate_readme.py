@@ -103,6 +103,15 @@ problem_details = {
         ],
         "constraints": "- The number of nodes in the list is in the range $[0, 10^4]$.\n- $-10^5 \\le \\text{Node.val} \\le 10^5$\n- `pos` is `-1` or a valid index in the linked-list.",
         "target_complexity": "Time: $O(N)$ | Space: $O(1)$ extra space using Fast & Slow Pointers (Floyd's Cycle-Finding Algorithm)"
+    },
+    23: {
+        "statement": "Given the `root` of a binary tree, return *its maximum depth*.\n\nA binary tree's **maximum depth** is the number of nodes along the longest path from the root node down to the farthest leaf node.",
+        "examples": [
+            "**Input:** `root = [3, 9, 20, null, null, 15, 7]`\n**Output:** `3`",
+            "**Input:** `root = [1, null, 2]`\n**Output:** `2`"
+        ],
+        "constraints": "- The number of nodes in the tree is in the range $[0, 10^4]$.\n- $-100 \\le \\text{Node.val} \\le 100$",
+        "target_complexity": "Time: $O(N)$ | Space: $O(H)$ recursion stack space (where $H$ is the height of the tree)"
     }
 }
 
