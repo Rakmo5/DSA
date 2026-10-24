@@ -34,15 +34,39 @@ struct TreeNode {
 
 class Solution {
 public:
-    int maxDepth(TreeNode* root) {
-        // TODO: Implement your solution here
-        return 0;
+    int maxDepth(TreeNode* current){
+        // If current is nullptr then return 0
+        if (current==nullptr){
+            return 0;
+        }
+        else{
+            // Check the maxdepth of left subtree
+            int left=maxDepth(current->left);
+            // Check the max depth of right subtree
+            int right=maxDepth(current->right);
+            // Check the which is greater and pass it
+            return 1+max(left,right);
+        }
+    
+    // int maxDepthOfTree(TreeNode*root){
+    //     maxDepth
+    // }
     }
 };
+
 
 int main() {
     cout << "Running No. 23: Maximum Depth of Binary Tree..." << endl;
     Solution solver;
+
     // Add test cases here
+    // Creating the tree
+    TreeNode* root1=new TreeNode(3);
+    root1->left=new TreeNode(1);
+    root1->right=new TreeNode(5);
+    root1->right->left=new TreeNode(4);
+    root1->right->right= new TreeNode(6);
+    int out = solver.maxDepth(root1);
+    cout<<endl<<"Max depth of the tree is "<<out;
     return 0;
 }

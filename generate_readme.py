@@ -112,6 +112,15 @@ problem_details = {
         ],
         "constraints": "- The number of nodes in the tree is in the range $[0, 10^4]$.\n- $-100 \\le \\text{Node.val} \\le 100$",
         "target_complexity": "Time: $O(N)$ | Space: $O(H)$ recursion stack space (where $H$ is the height of the tree)"
+    },
+    24: {
+        "statement": "Given the `root` of a binary tree, determine if it is a valid binary search tree (BST).\n\nA **valid BST** is defined as follows:\n- The left subtree of a node contains only nodes with keys **strictly less than** the node's key.\n- The right subtree of a node contains only nodes with keys **strictly greater than** the node's key.\n- Both the left and right subtrees must also be binary search trees.",
+        "examples": [
+            "**Input:** `root = [2, 1, 3]`\n**Output:** `true`",
+            "**Input:** `root = [5, 1, 4, null, null, 3, 6]`\n**Output:** `false` (Root is 5, but right child 4 is smaller than 5)"
+        ],
+        "constraints": "- The number of nodes in the tree is in the range $[1, 10^4]$.\n- $-2^{31} \\le \\text{Node.val} \\le 2^{31} - 1$",
+        "target_complexity": "Time: $O(N)$ | Space: $O(H)$ recursion stack space (where $H$ is the height of the tree)"
     }
 }
 
