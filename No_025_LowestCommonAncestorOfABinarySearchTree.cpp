@@ -1,31 +1,40 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <unordered_map>
-#include <unordered_set>
 #include <algorithm>
-#include <stack>
-#include <queue>
+#include <cassert>
 
 using namespace std;
 
 /*
- * Problem: Lowest Common Ancestor of a Binary Search Tree
+ * Problem: Lowest Common Ancestor of a Binary Search Tree (LeetCode 235)
  * Difficulty: Medium
  * Level: Level 1
  * Pattern: Tree / LCA
  * Why/Skill: Use BST property
  * 
  * Problem Statement:
+ * Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
  * (Solve this on LeetCode: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
  * 
  * Hints:
  * - If you get stuck, ask me for a hint in the chat!
  */
 
+// Definition for a binary tree node.
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+};
+
 class Solution {
 public:
-    // TODO: Implement your solution here
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        // TODO: Implement your solution here
+        return nullptr;
+    }
 };
 
 int main() {

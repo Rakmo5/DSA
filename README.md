@@ -3,7 +3,7 @@
 Welcome to my personal Data Structures and Algorithms (DSA) workspace! This repository contains my implementations of foundational data structures from Andrei Neagoie's Zero To Mastery (ZTM) course, along with a curated **150-problem LeetCode roadmap** aimed at cracking product-based company placement drives.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/LeetCode-26%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
+  <img src="https://img.shields.io/badge/LeetCode-27%20%2F%20150%20Solved-blue?style=for-the-badge&logo=leetcode" alt="Leetcode Solved">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-orange?style=for-the-badge&logo=c%2B%2B" alt="Language">
   <img src="https://img.shields.io/badge/Placement-Prep-success?style=for-the-badge" alt="Placement Prep">
   <img src="https://img.shields.io/badge/Status-Grinding-red?style=for-the-badge" alt="Status">
@@ -21,11 +21,11 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 | Difficulty Level | Problems Solved | Progress Percentage | Status |
 | :--- | :---: | :---: | :---: |
-| **Level 1** | 23 / 50 | 46.0% | 🟢 Active |
+| **Level 1** | 24 / 50 | 48.0% | 🟢 Active |
 | **Level 2** | 3 / 50 | 6.0% | 🟢 Active |
 | **Level 3** | 0 / 30 | 0.0% | ⚪ Not Started |
 | **Interview Mode** | 0 / 20 | 0.0% | ⚪ Not Started |
-| **TOTAL** | **26 / 150** | **17.3%** | **🧠 Grind Mode** |
+| **TOTAL** | **27 / 150** | **18.0%** | **🧠 Grind Mode** |
 
 ---
 
@@ -33,29 +33,31 @@ Here is my interactive progress tracker. It features a custom animated bar that 
 
 > **📱 Mobile Friendly Card**: Read the problem, test cases, and constraints right here on your phone while walking or commuting!
 
-### **No. 24: [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)**
-* **Level:** `Level 1` | **Difficulty:** 🟡 Medium | **Pattern:** `BST / Tree DFS`
-* **Local Code:** [`No_024_ValidateBinarySearchTree.cpp`](./No_024_ValidateBinarySearchTree.cpp)
+### **No. 25: [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)**
+* **Level:** `Level 1` | **Difficulty:** 🟡 Medium | **Pattern:** `Tree / LCA`
+* **Local Code:** [`No_025_LowestCommonAncestorOfABinarySearchTree.cpp`](./No_025_LowestCommonAncestorOfABinarySearchTree.cpp)
 
 #### 📝 Problem Statement
-Given the `root` of a binary tree, determine if it is a valid binary search tree (BST).
+Given a binary search tree (BST), find the **lowest common ancestor (LCA)** node of two given nodes in the BST.
 
-A **valid BST** is defined as follows:
-- The left subtree of a node contains only nodes with keys **strictly less than** the node's key.
-- The right subtree of a node contains only nodes with keys **strictly greater than** the node's key.
-- Both the left and right subtrees must also be binary search trees.
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).”
 
 #### 💡 Examples
-**Input:** `root = [2, 1, 3]`
-**Output:** `true`
+**Input:** `root = [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], p = 2, q = 8`
+**Output:** `6`
+**Explanation:** The LCA of nodes 2 and 8 is 6.
 
-**Input:** `root = [5, 1, 4, null, null, 3, 6]`
-**Output:** `false` (Root is 5, but right child 4 is smaller than 5)
+**Input:** `root = [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], p = 2, q = 4`
+**Output:** `2`
+**Explanation:** The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
 
 #### ⚙️ Constraints & Target
-- The number of nodes in the tree is in the range $[1, 10^4]$.
-- $-2^{31} \le \text{Node.val} \le 2^{31} - 1$
-* **Optimal Complexity Goal:** Time: $O(N)$ | Space: $O(H)$ recursion stack space (where $H$ is the height of the tree)
+- The number of nodes in the tree is in the range $[2, 10^5]$.
+- $-10^9 \le \text{Node.val} \le 10^9$
+- All `Node.val` are **unique**.
+- `p != q`
+- `p` and `q` will exist in the BST.
+* **Optimal Complexity Goal:** Time: $O(H)$ (where $H$ is the tree height, $O(\log N)$ for balanced BST) | Space: $O(1)$ iterative or $O(H)$ recursive
 
 ---
 
@@ -74,7 +76,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 
 
 <details>
-<summary><b>🔥 Level 1 (23/50 Solved)</b></summary>
+<summary><b>🔥 Level 1 (24/50 Solved)</b></summary>
 <br>
 
 | No. | Problem | Algorithmic Pattern | Difficulty | Local C++ Code | Status |
@@ -102,7 +104,7 @@ Below is the complete list of 150 problems categorized by level. Each problem li
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Linked List / Merge | 🟢 Easy | [`No_021_MergeTwoSortedLists.cpp`](./No_021_MergeTwoSortedLists.cpp) | ✅ Solved |
 | 22 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Fast & Slow Pointers | 🟢 Easy | [`No_022_LinkedListCycle.cpp`](./No_022_LinkedListCycle.cpp) | ✅ Solved |
 | 23 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Tree DFS / Recursion | 🟢 Easy | [`No_023_MaximumDepthOfBinaryTree.cpp`](./No_023_MaximumDepthOfBinaryTree.cpp) | ✅ Solved |
-| 24 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | BST / Tree DFS | 🟡 Medium | [`No_024_ValidateBinarySearchTree.cpp`](./No_024_ValidateBinarySearchTree.cpp) | ⏳ Not Started |
+| 24 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | BST / Tree DFS | 🟡 Medium | [`No_024_ValidateBinarySearchTree.cpp`](./No_024_ValidateBinarySearchTree.cpp) | ✅ Solved |
 | 25 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Tree / LCA | 🟡 Medium | [`No_025_LowestCommonAncestorOfABinarySearchTree.cpp`](./No_025_LowestCommonAncestorOfABinarySearchTree.cpp) | ⏳ Not Started |
 | 26 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | Tree DFS / Recursion | 🟢 Easy | [`No_026_DiameterOfBinaryTree.cpp`](./No_026_DiameterOfBinaryTree.cpp) | ⏳ Not Started |
 | 27 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Heap / Priority Queue | 🟡 Medium | [`No_027_KthLargestElementInAnArray.cpp`](./No_027_KthLargestElementInAnArray.cpp) | ⏳ Not Started |

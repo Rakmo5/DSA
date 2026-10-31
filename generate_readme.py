@@ -121,6 +121,15 @@ problem_details = {
         ],
         "constraints": "- The number of nodes in the tree is in the range $[1, 10^4]$.\n- $-2^{31} \\le \\text{Node.val} \\le 2^{31} - 1$",
         "target_complexity": "Time: $O(N)$ | Space: $O(H)$ recursion stack space (where $H$ is the height of the tree)"
+    },
+    25: {
+        "statement": "Given a binary search tree (BST), find the **lowest common ancestor (LCA)** node of two given nodes in the BST.\n\nAccording to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).”",
+        "examples": [
+            "**Input:** `root = [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], p = 2, q = 8`\n**Output:** `6`\n**Explanation:** The LCA of nodes 2 and 8 is 6.",
+            "**Input:** `root = [6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], p = 2, q = 4`\n**Output:** `2`\n**Explanation:** The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition."
+        ],
+        "constraints": "- The number of nodes in the tree is in the range $[2, 10^5]$.\n- $-10^9 \\le \\text{Node.val} \\le 10^9$\n- All `Node.val` are **unique**.\n- `p != q`\n- `p` and `q` will exist in the BST.",
+        "target_complexity": "Time: $O(H)$ (where $H$ is the tree height, $O(\\log N)$ for balanced BST) | Space: $O(1)$ iterative or $O(H)$ recursive"
     }
 }
 
